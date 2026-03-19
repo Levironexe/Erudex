@@ -20,23 +20,23 @@ describe('useResizablePanels storage logic', () => {
   })
 
   it('should read default width when no stored value', () => {
-    const value = localStorage.getItem('learn-better:panel-width')
+    const value = localStorage.getItem('erudex:panel-width')
     expect(value).toBeNull()
   })
 
   it('should persist width to localStorage', () => {
-    localStorage.setItem('learn-better:panel-width', '35')
-    expect(localStorage.getItem('learn-better:panel-width')).toBe('35')
+    localStorage.setItem('erudex:panel-width', '35')
+    expect(localStorage.getItem('erudex:panel-width')).toBe('35')
   })
 
   it('should persist collapsed state to localStorage', () => {
-    localStorage.setItem('learn-better:chat-collapsed', 'true')
-    expect(localStorage.getItem('learn-better:chat-collapsed')).toBe('true')
+    localStorage.setItem('erudex:chat-collapsed', 'true')
+    expect(localStorage.getItem('erudex:chat-collapsed')).toBe('true')
   })
 
   it('should handle invalid stored width gracefully', () => {
-    localStorage.setItem('learn-better:panel-width', 'invalid')
-    const stored = localStorage.getItem('learn-better:panel-width')
+    localStorage.setItem('erudex:panel-width', 'invalid')
+    const stored = localStorage.getItem('erudex:panel-width')
     const parsed = Number(stored)
     expect(Number.isFinite(parsed)).toBe(false)
   })

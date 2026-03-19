@@ -18,7 +18,7 @@ export function ResizablePanels({
   defaultRightWidth = 40,
   minRightWidth = 15,
   maxRightWidth = 75,
-  storageKey = 'learn-better',
+  storageKey = 'erudex',
 }: ResizablePanelsProps) {
   const { rightWidth, isCollapsed, isDragging, toggleCollapse, handleDragStart } =
     useResizablePanels({

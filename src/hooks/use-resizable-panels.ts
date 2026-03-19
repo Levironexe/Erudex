@@ -39,7 +39,7 @@ export function useResizablePanels({
   defaultWidth = 40,
   minWidth = 15,
   maxWidth = 75,
-  storageKey = 'learn-better',
+  storageKey = 'erudex',
 }: UseResizablePanelsOptions = {}): UseResizablePanelsReturn {
   const [rightWidth, setRightWidth] = useState(() =>
     readStoredNumber(STORAGE_WIDTH_KEY(storageKey), defaultWidth)

@@ -24,7 +24,7 @@ export async function Navbar() {
 
   return (
     <header className="flex items-center justify-between px-4 h-12 border-b border-border bg-background shrink-0">
-      <span className="text-sm font-semibold text-foreground">Learn Better</span>
+      <span className="text-sm font-semibold text-foreground">Erudex</span>
 
       <div className="flex items-center gap-3">
         <ThemeToggle />

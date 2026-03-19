@@ -42,7 +42,7 @@ export async function createBraveSearchTools(): Promise<BraveSearchTools | null>
     },
   })
 
-  const client = new Client({ name: 'learn-better', version: '1.0.0' })
+  const client = new Client({ name: 'erudex', version: '1.0.0' })
   await client.connect(transport)
 
   const { tools: mcpTools } = await client.listTools()

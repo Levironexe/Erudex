@@ -22,14 +22,14 @@ describe('panel layout integration', () => {
 
   it('should persist width to localStorage and read it back', () => {
     const width = 35
-    localStorage.setItem('learn-better:panel-width', String(width))
-    const stored = Number(localStorage.getItem('learn-better:panel-width'))
+    localStorage.setItem('erudex:panel-width', String(width))
+    const stored = Number(localStorage.getItem('erudex:panel-width'))
     expect(stored).toBe(35)
   })
 
   it('should persist collapse state and read it back', () => {
-    localStorage.setItem('learn-better:chat-collapsed', 'true')
-    const stored = localStorage.getItem('learn-better:chat-collapsed')
+    localStorage.setItem('erudex:chat-collapsed', 'true')
+    const stored = localStorage.getItem('erudex:chat-collapsed')
     expect(stored).toBe('true')
   })
 
@@ -48,11 +48,11 @@ describe('panel layout integration', () => {
   it('should restore right panel to previous width after expand', () => {
     // Simulate: set width 35, collapse, expand
     const savedWidth = 35
-    localStorage.setItem('learn-better:panel-width', String(savedWidth))
-    localStorage.setItem('learn-better:chat-collapsed', 'true')
+    localStorage.setItem('erudex:panel-width', String(savedWidth))
+    localStorage.setItem('erudex:chat-collapsed', 'true')
 
     // On expand, read the saved width
-    const restored = Number(localStorage.getItem('learn-better:panel-width'))
+    const restored = Number(localStorage.getItem('erudex:panel-width'))
     expect(restored).toBe(35)
   })
 

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Learn Better',
+  title: 'Erudex',
   description: 'AI-powered learning platform',
 }
 
